@@ -86,6 +86,6 @@ public class GrupoController {
     public String delete(Grupo grupo, RedirectAttributes attributes) {
         grupoService.eliminarPorId(grupo.getId());
         attributes.addFlashAttribute("msg", "Grupo eliminado correctamente");
-        return "redirect/grupos";
+        return "redirect:/grupos";
     }
 }

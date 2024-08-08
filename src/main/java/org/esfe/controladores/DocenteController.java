@@ -86,6 +86,6 @@ public class DocenteController {
     public String delete(Docente docente, RedirectAttributes attributes) {
         docenteService.eliminarPorId(docente.getId());
         attributes.addFlashAttribute("msg", "Docente eliminado correctamente");
-        return "redirect/docentes";
+        return "redirect:/docentes";
     }
 }
