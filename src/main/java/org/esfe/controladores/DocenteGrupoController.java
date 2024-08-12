@@ -118,7 +118,7 @@ public class DocenteGrupoController {
         return "redirect:/asignaciones";
     }
 
-    @GetMapping("remove/{id}")
+    @GetMapping("/remove/{id}")
     public String remove(@PathVariable("id") Integer id, Model model){
         DocenteGrupo docenteGrupo = docenteGrupoService.buscarPorId(id);
         model.addAttribute("docenteGrupo", docenteGrupo);
